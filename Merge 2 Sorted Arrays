@@ -1,0 +1,12 @@
+n1 = [1,4,6,8,9,11,45]
+n2 = [2,3,5,7,10,46]
+i,j = 0, 0
+res = []
+while i < len(n1) and j <len(n2):
+    if n1[i] < n2[j]:
+        res.append(n1[i])
+        i += 1
+    else:
+        res.append(n2[j])
+        j += 1
+print(res)
