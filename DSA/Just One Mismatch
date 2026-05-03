@@ -4,11 +4,13 @@ s= "apple"
 for word in arr:
     count = 0
     if len(word) == len(s):
-        letter =0
-        for char in word:
-            if char != s[letter]:
+        
+        for i in range(len(word)):
+            if word[i] != s[i]:
                 count += 1
-            letter += 1
+            if count > 1:
+                break
+            
     if count == 1:
         print(word)
     
