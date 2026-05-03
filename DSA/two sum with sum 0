@@ -1,0 +1,7 @@
+arr = [-1,0,2,-2,4]
+mappy= {}
+for i in range(len(arr)):
+    comp = -(arr[i])
+    if comp in mappy:
+        print(mappy[comp],i)
+    mappy[arr[i]]= i
