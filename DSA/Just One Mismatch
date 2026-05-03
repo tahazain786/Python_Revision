@@ -1,0 +1,14 @@
+arr = ["bana", "appie","banaba", "bananza"]
+s= "apple"
+
+for word in arr:
+    count = 0
+    if len(word) == len(s):
+        letter =0
+        for char in word:
+            if char != s[letter]:
+                count += 1
+            letter += 1
+    if count == 1:
+        print(word)
+    
