@@ -10,3 +10,4 @@ for j in range(len(arr)):
         i += 1
     if psum == target:
         print(i,j)
+        # add "break" if u want to return only the first set of indices
